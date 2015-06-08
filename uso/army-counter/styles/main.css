@@ -92,6 +92,13 @@ header .donate {
   text-indent: -9999px;
 }
 
+header .donate a {
+  width: 138px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+}
+
 .main {
   padding: 30px;
   min-height: 880px;

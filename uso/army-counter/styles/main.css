@@ -51,7 +51,7 @@ body {
   text-align: center;
 }
 
-header, main, footer {
+header, .main, footer {
   width: 920px;
   margin: 0 auto;
   text-align: left;
@@ -92,10 +92,9 @@ header .donate {
   text-indent: -9999px;
 }
 
-main {
+.main {
   padding: 30px;
   min-height: 880px;
-  background-origin: content-box;
 }
 
 .main-bg {
@@ -105,7 +104,7 @@ main {
   margin: 0 auto 30px;
 }
 
-main .form {
+.main .form {
   float: left;
   width: 428px;
   margin-right: 30px;
@@ -148,7 +147,7 @@ input, select {
   background: #CB1C35;
 }
 
-main .names {
+.main .names {
   float: left;
   padding-left: 80px;
   background: #ffffff url("../images/bg-column.png") no-repeat left top;
@@ -253,19 +252,19 @@ main .names {
     max-width: 100%;
     height: auto;
   }
-  header, main, footer {
+  header, .main, footer {
     width: 90%;
     margin: 0 2%;
     padding: 0 3%;
     text-align: left;
     background-color: #ffffff;
   }
-  main .form, main .names {
+  .main .form, .main .names {
     float: none;
     width: 94%;
     padding: 10px 3%;
   }
-  main .names { background: none; }
+  .main .names { background: none; }
   .main-bg { display: none; }
 }
 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form action='http://trilogyformsdev.azurewebsites.net/save' method="post" id="action-form" class="trilogy-form">
+    <h1>Join Form</h1>
+
+    <div class='form-line'>
+        <input type='text' class='required email' placeholder='Email' name='EmailAddress'  />
+    </div>
+
+    <div class='form-line'>
+        <input type="hidden" id="emailoptin" name="EmailOptIn" value="false" />
+        <label for="emailoptin"><input type="checkbox" id="emailoptin" name="EmailOptIn" value="true" />Email Opt In</label>
+    </div>
+
+    <div class='form-line'>
+        <button type='submit'>Submit</button>
+        <input type="hidden" name="ActivityCode" value="dev-join-form" />
+    </div>
+</form>
+
+<div id="action-form-response" style="display: none;">
+    <h1>Join Form Submitted</h1>
+    <p>Thank you for submitting the join form.</p>
+</div>
+</body>
+</html>

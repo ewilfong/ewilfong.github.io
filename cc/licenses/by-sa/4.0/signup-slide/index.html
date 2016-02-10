@@ -402,8 +402,9 @@
     <div id="signup" class="slide-trigger" style="display: none;">
       <img src="/images/deed/logo-cc-heart-white.png" class="slide-logo" alt="CC Heart Logo" width="100" height="88" />
       <p>This content is freely available under simple legal terms because of Creative Commons. If you believe in keeping the internet creative, free, and open, SIGN ON NOW:</p>
-      <form>
-        <input type="email" name="email" id="email" label="Email address" placeholder="Email address" class="required" />
+      <form action="https://donate.creativecommons.org/civicrm/profile/create?gid=61&amp;reset=1" method="post">
+        <input name="gid" type="hidden" value="61" />
+        <input type="email" name="email-Primary" type="email" id="email-Primary" label="Email address" placeholder="Email address" class="required" />
         <div id="errorMessage" style="display: none;">
           Please enter a valid email address (i.e. name@domain.com)
         </div>
@@ -413,6 +414,7 @@
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="./index_files/jquery.validate.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       var version = Math.floor((Math.random() * 2) + 1);
@@ -421,6 +423,7 @@
         $('#donate').show();
       } else {
         $('#signup').show();
+        $("#signup form").validate();
       }
 
       $('#deed-donate-slide').addClass('slider');
@@ -449,7 +452,7 @@
         }
       });
 
-      $(".slide-trigger p, .slide-trigger button").click(function(){
+      $("#donate.slide-trigger p, #donate.slide-trigger button").click(function(){
         window.location.href = "https://donate.creativecommons.org/?utm_campaign=2015fund&utm_source=license_slide2015";
 
       });

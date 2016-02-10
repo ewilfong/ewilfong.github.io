@@ -992,11 +992,11 @@ ol.arabic-markers {
 }
 
 /* --- form styles --- */
-#deed-donate-slide.signup .slide-trigger { padding: 10px; }
+#signup.slide-trigger { padding: 10px; }
 
-#deed-donate-slide.signup form { padding-top: 10px; }
+#signup form { padding-top: 10px; }
 
-#deed-donate-slide.signup input {
+#signup input {
 	display: block;
 	box-sizing: border-box;
 	width: 100%;

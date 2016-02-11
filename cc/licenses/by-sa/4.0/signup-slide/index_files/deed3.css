@@ -1018,20 +1018,16 @@ ol.arabic-markers {
 
 /* Add styles to use Trilogy style error labels */
 label.error {
-	background: #ce5606;
-	padding: 3px 5px;
+	background: #ffffff;
+	padding: 5px 8px;
 	display: block;
-	white-space: nowrap;
-	position: absolute;
-	top: 40px;
-	z-index: 9999;
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
 	font-size: 10px;
 	line-height: 10px;
 	font-weight: 400;
-	color: #fff;
+	color: #ce5606;
 	text-transform: uppercase;
 }
 

@@ -1019,7 +1019,8 @@ ol.arabic-markers {
 /* Add styles to use Trilogy style error labels */
 label.error {
 	background: #ffffff;
-	padding: 5px 8px;
+	padding: 5px;
+	margin: 5px;
 	display: block;
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;

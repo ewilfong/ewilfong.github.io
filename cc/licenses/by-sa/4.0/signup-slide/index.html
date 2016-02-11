@@ -405,9 +405,6 @@
       <form action="https://donate.creativecommons.org/civicrm/profile/create?gid=61&amp;reset=1" method="post">
         <input name="gid" type="hidden" value="61" />
         <input type="email" name="email-Primary" type="email" id="email-Primary" label="Email address" placeholder="Email address" class="required" />
-        <div id="errorMessage" style="display: none;">
-          Please enter a valid email address (i.e. name@domain.com)
-        </div>
         <button type="submit">Submit</button>
       </form>
     </div>
@@ -417,7 +414,8 @@
   <script src="./index_files/jquery.validate.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
-      var version = Math.floor((Math.random() * 2) + 1);
+      //var version = Math.floor((Math.random() * 2) + 1);
+      var version = 2;
 
       if (version == '1') {
         $('#donate').show();

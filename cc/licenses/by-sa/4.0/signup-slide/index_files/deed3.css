@@ -994,6 +994,8 @@ ol.arabic-markers {
 /* --- form styles --- */
 #signup.slide-trigger { padding: 10px; }
 
+#signup.slide-trigger p { cursor: initial; }
+
 #signup form { padding-top: 10px; }
 
 #signup input {
